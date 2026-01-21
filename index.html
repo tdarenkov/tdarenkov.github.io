@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #ffffff;
+            color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 700px;
+            text-align: center;
+        }
+        
+        .profile-photo {
+            width: 400px;
+            height: auto;
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            font-weight: normal;
+            margin-bottom: 30px;
+            letter-spacing: 0.02em;
+        }
+        
+        .current-position {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        
+        .previous-position {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+        
+        .bio {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .links {
+            font-size: 1.2em;
+        }
+        
+        .links a {
+            color: #0000EE;
+            text-decoration: underline;
+            margin: 0 10px;
+        }
+        
+        .links a:visited {
+            color: #551A8B;
+        }
+        
+        .links a:hover {
+            opacity: 0.7;
+        }
+        
+        .separator {
+            margin: 0 5px;
+        }
+        
+        /* Mobile responsive */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .current-position,
+            .previous-position {
+                font-size: 1.1em;
+            }
+            
+            .bio {
+                font-size: 1em;
+            }
+            
+            .links {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Replace 'profile.jpg' with your actual photo filename -->
+        <img src="profile.jpeg" alt="Profile Photo" class="profile-photo">
+        
+        <!-- Replace with your name -->
+        <h1>theo darenkov</h1>
+        
+        <!-- Replace with your current position -->
+        <div class="current-position">data, ops & financial consulting @ comillion</div>
+        
+        <!-- Replace with your previous position (or remove this line) -->
+        <div class="previous-position">previously @ hebbia / biocheck / various M&A advisors</div>
+        
+        <!-- Replace with your bio/tagline -->
+        <div class="bio">
+            founder building at the intersection of finance and AI.<br>
+            self-taught data engineer. former banker turned operator.<br>
+            passionate about making things (and myself) work better.
+        </div>
+        
+        <!-- Links section - add or remove as needed -->
+        <div class="links">
+            <a href="https://linkedin.com/in/tdarenkov" target="_blank">linkedin</a>
+            <span class="separator">|</span>
+            <a href="mailto:theo@comillion.io">theo@comillion.io</a>
+        </div>
+    </div>
+</body>
+</html>
